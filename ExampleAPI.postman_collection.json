@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "97d7f1bd-79d1-4854-9306-b892c252e349",
+		"name": "ExampleAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1634975"
+	},
+	"item": [
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7052/Account",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7052",
+					"path": [
+						"Account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7052/Account/Create?userId=venkat&amount=500",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7052",
+					"path": [
+						"Account",
+						"Create"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "venkat"
+						},
+						{
+							"key": "amount",
+							"value": "500"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deposit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7052/Account/Deposit?userId=venkat&accountId=69fcad2f-73cc-4b83-b584-86d8ef4ccc09&amount=100",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7052",
+					"path": [
+						"Account",
+						"Deposit"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "venkat"
+						},
+						{
+							"key": "accountId",
+							"value": "69fcad2f-73cc-4b83-b584-86d8ef4ccc09"
+						},
+						{
+							"key": "amount",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Withdraw",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7052/Account/Withdraw?userId=venkat&accountId=69fcad2f-73cc-4b83-b584-86d8ef4ccc09&amount=100",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7052",
+					"path": [
+						"Account",
+						"Withdraw"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "venkat"
+						},
+						{
+							"key": "accountId",
+							"value": "69fcad2f-73cc-4b83-b584-86d8ef4ccc09"
+						},
+						{
+							"key": "amount",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7052/Account/Delete?userId=venkat&accountId=d970b056-133d-4989-825e-24765b7dfb59",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7052",
+					"path": [
+						"Account",
+						"Delete"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "venkat"
+						},
+						{
+							"key": "accountId",
+							"value": "d970b056-133d-4989-825e-24765b7dfb59"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete All",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7052/Account/DeleteAll",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7052",
+					"path": [
+						"Account",
+						"DeleteAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
